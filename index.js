@@ -1,3 +1,6 @@
-// run `node index.js` in the terminal
+const { startCreating, buildSetup } = require("./src/main.js");
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+(() => {
+  buildSetup();
+  startCreating();
+})();
